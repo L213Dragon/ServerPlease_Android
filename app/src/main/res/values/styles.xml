@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#276FBB</item>
+        <item name="colorPrimaryDark">#272DBB</item>
+        <item name="colorAccent">#2700BB</item>
+    </style>
+
+    <style name="tabTheme" parent="android:style/Theme">
+        <item name="android:tabWidgetStyle">@style/Widget.TabWidget</item>
+    </style>
+
+    <style name="Widget.TabWidget" parent="android:Theme">
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+
+</resources>

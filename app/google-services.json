@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "856443327390",
+    "project_id": "server-please"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856443327390:android:a4700d28fa6e5167",
+        "android_client_info": {
+          "package_name": "com.ianpanton.serverplease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHmVwM8jPW1ciRXBygoMV_pMzPV698qVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

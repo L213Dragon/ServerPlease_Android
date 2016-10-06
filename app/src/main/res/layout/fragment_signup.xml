@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bbbbb.com.waiterplease.ServerSignupActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/s_emailField"
+            android:hint="Email"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/s_passwordField"
+            android:hint="Password"
+            android:layout_below="@+id/ss_emailField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/s_confirmpasswordFiled"
+            android:password="false"
+            android:hint="Confirm Password"
+            android:layout_below="@+id/ss_passwordField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_progressBar"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_above="@+id/ss_signupBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:id="@+id/s_signupBtn"
+            android:background="@drawable/button_selector"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_below="@+id/ss_confirmpasswordFiled"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

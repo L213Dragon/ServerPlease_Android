@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.1'
+
+    defaultConfig {
+        applicationId "com.ianpanton.serverplease"
+        minSdkVersion 17
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile 'me.leolin:ShortcutBadger:1.1.3@aar'
+    compile 'cc.cloudist.acplibrary:library:1.2.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.parse:parsefacebookutils-v4-android:1.10.3@aar'
+}
+
+//apply plugin: 'com.google.gms.google-services'
+

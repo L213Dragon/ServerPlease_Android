@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bbbbb.com.waiterplease.SettingTabFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contextClickable="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rlTitle"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+
+                android:id="@+id/txtTitle"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/fs_newPassword"
+                android:layout_below="@+id/fs_currPassword"
+                android:layout_alignStart="@+id/fs_currPassword"
+                android:hint="Password" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/fs_confirmPassword"
+                android:layout_below="@+id/fs_newPassword"
+                android:layout_alignStart="@+id/fs_newPassword"
+                android:hint="Confirm Password" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fs_progressBar"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:id="@+id/fs_changeBtn"
+                android:layout_below="@+id/fs_confirmPassword"
+                android:layout_alignStart="@+id/fs_confirmPassword"
+                android:background="@drawable/button_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryWhite"
+                android:longClickable="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:id="@+id/fs_deleteBtn"
+                android:background="@drawable/button_selector"
+                android:layout_weight="0.47"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryWhite"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/fs_logoutBtn"
+                android:background="@drawable/logout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Log Out"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+    
